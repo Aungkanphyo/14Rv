@@ -33,3 +33,20 @@ vip1.getRoomFree();
 vip1.getName();
 // vip1 ကို output ထုတ်ကြည့်လိုက်ရင် console မှာ prototype ဆိုတဲ့ကောင်လေးပါတယ်။အ့တာကိုသိချင်လို့ output ထုတ်ထားတာဖြစ်တယ်။
 console.log(vip1);
+
+class Shade {
+  constructor(radius) {
+    this.radius = radius;
+  }
+  getArea() {
+    return 0;
+  }
+}
+class Square extends Shade {
+  getArea() {
+    return this.radius * this.radius;
+  }
+}
+
+const square1 = new Square(4);
+console.log(square1.getArea());
